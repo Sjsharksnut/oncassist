@@ -12,9 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BAILEYMENDEL_FIREBASE }}'
-          channelId: live
-          projectId: baileymendel-firebase
+      # to do: install firebase + set up auth
+      # install firebase with NPM install
+      # 
+
+      - run: firebase deploy
+
+      # env:
+      # GOOGLE_APPLICATION_CREDENTIALS - variable name we need to add
+      # contains name of file, contents of file should be contents of GitHub Secret
+      # write contents of secret to a file
+      # pass name of that file via google application 
