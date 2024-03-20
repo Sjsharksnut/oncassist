@@ -2,10 +2,10 @@ name: Deploy to Firebase
 on:
   push:
     branches:
-      - main
-    pull_request:
-      branches:
-        - main
+    - main
+  pull_request:
+    branches:
+    - main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
