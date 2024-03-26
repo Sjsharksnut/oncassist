@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install -g firebase-tools
-      - run: echo {{ secrets.FIREBASE_SERVICE_ACCOUNT_BAILEYMENDEL_FIREBASE }} > key.json
+      - name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BAILEYMENDEL_FIREBASE }}
       - run: firebase deploy
-        env: 
-          GOOGLE_APPLICATION_CREDENTIALS: "key.json"
