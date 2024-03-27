@@ -1,38 +1,59 @@
-"use client"
+"use client";
 
-import { useState } from 'react';
-import { AgGridReact } from 'ag-grid-react';
+import { useState, useEffect } from "react";
+import { AgGridReact } from "ag-grid-react";
 
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-quartz.css";
 
-export default function Page() {
-  // Row Data: The data to be displayed.
-  const [rowData] = useState([
-    { make: "Tesla", model: "Model Y", price: 64950, electric: true },
-    { make: "Ford", model: "F-Series", price: 33850, electric: false },
-    { make: "Toyota", model: "Corolla", price: 29600, electric: false },
-    { make: 'Mercedes', model: 'EQA', price: 48890, electric: true },
-    { make: 'Fiat', model: '500', price: 15774, electric: false },
-    { make: 'Nissan', model: 'Juke', price: 20675, electric: false },
-  ]);
-  
-  // Column Definitions: Defines & controls grid columns.
-  const [columnDefs] = useState([
-    { field: "make" },
-    { field: "model" },
-    { field: "price" },
-    { field: "electric" }
-  ]);
+import { db } from "./firebase";
+import { collection, getDocs } from "firebase/firestore";
 
-  // Container: Defines the grid's theme & dimensions.
+export default function Page() {
+
+  const [rowData, setRowData] = useState([]);
+  const [columnDefs, setColumnDefs] = useState([]);
+
+  const getData = async () => {
+    // Get all docs from "liquidbiopsies1" then...
+    await getDocs(collection(db, "liquidbiopsies1")).then((querySnapshot) => {
+      // map the docs into a list of objects
+      const newData = querySnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      // Save the docs into the react state
+      setRowData(newData);
+
+      // To dynamically determine columns, we'll iterate through each row...
+      const newColumnDefs = newData.reduce((accumulator, row) => {
+        // Then iterate through each key
+        Object.keys(row).forEach((key) => {
+          // Check if we already have a column for this key
+          if (!accumulator.includes(key)) {
+            // if not, then add the key to our list of colums
+            accumulator.push(key);
+          }
+        });
+        // return the flat list of columns. i.e. [id, company, target]
+        return accumulator;
+      }, []);
+      // then convert the flat list to the nested struct ag-grid expects
+      setColumnDefs(newColumnDefs.map(key => ({ 'field': key })));
+    });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+
   return (
-    <div className={"ag-theme-quartz-dark"} style={{ width: '800px', height: '800px' }}>
-      <AgGridReact
-        rowData={rowData}
-        columnDefs={columnDefs}
-        style={{ height: '100%', width: '100%' }}
-      ></AgGridReact>
+    <div
+      className={"ag-theme-quartz-dark"}
+      style={{ width: "100vw", height: "100vh" }}
+    >
+      <AgGridReact rowData={rowData} columnDefs={columnDefs}></AgGridReact>
     </div>
   );
- }
+}
