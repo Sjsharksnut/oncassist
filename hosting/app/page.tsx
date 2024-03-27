@@ -15,8 +15,8 @@ export default function Page() {
   const [columnDefs, setColumnDefs] = useState([]);
 
   const getData = async () => {
-    // Get all docs from "liquidbiopsies1" then...
-    await getDocs(collection(db, "liquidbiopsies1")).then((querySnapshot) => {
+    // Get all docs from "liquidbiospy1" then...
+    await getDocs(collection(db, "liquidbiospy1")).then((querySnapshot) => {
       // map the docs into a list of objects
       const newData = querySnapshot.docs.map((doc) => ({
         id: doc.id,
