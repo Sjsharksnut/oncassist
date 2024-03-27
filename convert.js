@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const data = [];
 
-fs.createReadStream('/Users/baileymendel/Desktop/OncAssistdesktop/TrialDataExport3.26.24.csv')
+fs.createReadStream('/Users/baileymendel/Desktop/OncAssistdesktop/liquidbiopsy1.csv')
   .pipe(csv())
   .on('data', (row) => {
     data.push(row);
