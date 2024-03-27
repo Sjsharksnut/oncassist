@@ -5,6 +5,7 @@
   },
   "hosting": {
     "source": "hosting",
+    "site": "oncassist",
     "ignore": [
       "firebase.json",
       "**/.*",
