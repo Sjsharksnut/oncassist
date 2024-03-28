@@ -52,7 +52,7 @@ export default function Page() {
     const orderedColumns = ['TEST NAME', 'COMPANY', 'LINK', 'Action (Coded)', 'Cancer Type (Coded)', 'FLUID TYPE', 'FDA Appr?', 'CLIA/CAP cert?', 'Target (Coded)']; // Example order
     console.log("Ordered Columns:", orderedColumns);
     console.log("Column Definitions:", columnDefs);
-    // Modify columnDefs to set the order
+    // Modify columnDefs to set the order that is needed
     setColumnDefs(columnDefs => {
       const orderedDefs = columnDefs.slice(); // Create a copy
       orderedDefs.sort((a, b) => {
