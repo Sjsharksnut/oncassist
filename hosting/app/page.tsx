@@ -50,6 +50,8 @@ export default function Page() {
   useEffect(() => {
     // Define your desired column order here
     const orderedColumns = ['TEST NAME', 'COMPANY', 'LINK', 'Action (Coded)', 'Cancer Type (Coded)', 'FLUID TYPE', 'FDA Appr?', 'CLIA/CAP cert?', 'Target (Coded)']; // Example order
+    console.log("Ordered Columns:", orderedColumns);
+    console.log("Column Definitions:", columnDefs);
     // Modify columnDefs to set the order
     setColumnDefs(columnDefs => {
       const orderedDefs = columnDefs.slice(); // Create a copy
@@ -57,7 +59,7 @@ export default function Page() {
         return orderedColumns.indexOf(a.field) - orderedColumns.indexOf(b.field);
       });
       return orderedDefs;
-    });
+    } );
   }, [columnDefs]); // Trigger when columnDefs change
 
 
