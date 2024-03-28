@@ -16,7 +16,7 @@ export default function Page() {
 
   const getData = async () => {
     // Get all docs from "liquidbiospy1" then...
-    await getDocs(collection(db, "liquidbiopsy1")).then((querySnapshot) => {
+    await getDocs(collection(db, "liquidbiopsy2")).then((querySnapshot) => {
       // map the docs into a list of objects
       const newData = querySnapshot.docs.map((doc) => ({
         id: doc.id,
