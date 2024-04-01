@@ -1,0 +1,90 @@
+﻿TEST NAME,COMPANY ,LINK,Action (Coded),Cancer Type (Coded),FLUID TYPE,FDA Appr?,CLIA/CAP cert?,Target (Coded),Appl. Genes/Proteins,Notes,,,TARGET,,,Dev. Stage,Turnaround Time ,,Location,Requirements,Cost,,ACTION,CANCER TYPE,TEST TYPE
+4D Lifetest Lung Dx,4D Lifetec,https://4dlifetec.com/cancer-detect-test/,Early Detection,Lung,Blood,No,No,CTC,,DDS (DNA Damage sensitivity) is used to identify CTCs,,,DDS (DNA gamage),,,In Development,,,,,,,Early Detection,Lung,LB
+ROCA,Abcodia,www.therocatest.co.uk,Risk Assessment ,Ovarian,Blood,No,No,Protein,"BRCA1/BRCA2 deficient, CA-125 ",To delay or prevent removal of ovaries,,,CA-125,,,Available by request ,,,UK only,BRCA1 or BRCA2 mutation,,,Txt Guidance,Ovarian,LB
+GemciTest,Acobiom,https://www.acobiom.com/en/gemcitest-first-predictive-diagnostic-test-in-pancreatic-cancer/,Txt Guidance,Pancreatic,Blood,No,No,mRNA,,For Gemcitabine specifically,,,,,,,7 days,,France,,,,Txt Guidance (Gemcitabine),Pancreatic Adeno (met),LB
+ACT Monitor Colon,ACT Genomics,https://www.actgenomics.com/tests-professional/actmonitor-colon,MRD (recurrance),Colorectal (CRC),Blood,No,Yes,ctDNA,,,,,ctDNA,,,,10 days,,,,,,MRD (recurrance),CRC,LB
+ACT Monitor Breast,ACT Genomics,https://www.actgenomics.com/tests-professional/actmonitor-breast,MRD (recurrance),Breast,Blood,No,Yes,ctDNA,,,,,ctDNA,,,,10 days,,,,,,MRD (recurrance),Breast,LB
+ACT Monitor Lung,ACT Genomics,https://www.actgenomics.com/tests-professional/actmonitor-lung,MRD (recurrance),Lung,Blood,No,Yes,ctDNA,,,,,ctDNA,,,,10 days,,,,,,MRD (recurrance),Lung,LB
+ACT Monitor +,ACT Genomics,https://actgenomics.webflow.io/tests-professional/actmonitor,MRD (recurrance),Solid Tumors,Blood,No,Yes,ctDNA,,,,,ctDNA,,,,10 days,,,,,,MRD (recurrance),Solid Tumors,LB
+ACT Cerebra,ACT Genomics,https://actgenomics.webflow.io/tests-professional/actcerebra,Txt Guidance,Brain,CSF,No,Yes,cfDNA,,Must be SOLID TUMOR met. Gene-based,,,cfDNA,,,,8 days,,,,,,Profiling,Brain (met),LB
+ACT Liquid PRO,ACT Genomics,https://www.actgenomics.com/tests-professional/actliquid,Txt Guidance,Solid Tumors,Blood,No,Yes,ctDNA,,Gene-Based,,,,,,,7 days,,,,,,Txt Guidance (Gene Based),Pan-Solid Tumors,LB
+PreveCol,Amadix,https://amadix.com/prevecol/,Early Detection,Colorectal (CRC),Blood,Yes ,Yes,mRNA,,Novel mRNA biomarkers? FDA breakthrough device approval Dec 2023,,,,,,,,,Spain,,450 euro,,Malignancy Assessment (Primary),CRC,LB
+DiagnoLung,Amadix,https://amadix.com/diagnolung/,Risk Assessment ,Lung,Blood,No,Yes,mRNA,,,,,,,,,,,,,,,Malignancy Assessment (Primary),Lung,LB
+PancreaDix,Amadix,https://amadix.com/pancreadix/,Risk Assessment ,Pancreatic,Blood,No,Yes,mRNA,,,,,,,,,,,,,,,Malignancy Assessment (Primary),Pancreatic,LB
+ADXBladder,Arquer Diagnostics,https://arquerdx.com/our-tests/,MRD (recurrance),Bladder,Urine,No,No,Protein,MCM5 protein,,,,MCM5,,,,3 hours,,England,,,,MRD (recurrance),Bladder,LB
+OvaWatch,Aspira Women's Health,https://aspirawh.com/ovawatch/,Risk Assessment ,Ovarian,Blood,No,Yes,Protein,,,,,"CA-125, 6 others",,,,,,,,,,Malignancy Assessment (Primary),Ovarian,LB
+Ova1Plus,Aspira Women's Health,https://aspirawh.com/ova1plus/,Risk Assessment ,Ovarian,Blood,No,Yes,Protein,,,,,"CA-125, 6 others",,,,,,,,,,Malignancy Assessment (Primary),Ovarian,LB
+CNSide,Biocept,https://biocept.com/cnside-assay/,Risk Assessment ,CNS (Central Nervous System),CSF,No,Yes,CTC,,,,,CTC,,,,,,,,,,Malignancy Assessment (metastasis),CNS mets (from carcinoma/melanoma),LB
+NodifyLung,Biodesix,https://www.biodesix.com/our-tests/nodify-lung,Risk Assessment ,Lung,Blood,No,Yes,Protein,LG3BP and C163A,proteins,,,,,,,,,,,,,Maignancy Assessment (Primary + met),Lung mets,LB
+IQlung,Biodesix,https://www.biodesix.com/our-tests/iq-lung,Txt Guidance,Lung (Non-Small Cell),Blood,No,Yes,cfDNA,,Gene-Based,,,,,,,,,,,,,Txt Guidance (Gene Based),NSCLC,LB
+Boston Gene Liquid Biopsy,Boston Gene,https://bostongene.com/providers/bostongene-liquid-biopsy/,Txt Guidance,Multiple,Blood,No,Yes,,,Gene-Based (genetic panel),,,,,,,,,,,,,,,
+CELLSearch,Menarini Silicon Biosystems,https://www.cellsearchctc.com/,MRD (recurrance),Multiple,Blood,Yes,Yes,CTC,,,,,CTC,,,,,,,,,,MRD ( met recurrance),"Breast, Prostate, CRC mets",LB
+CELLSearch CMMC,Menarini Silicon Biosystems,https://www.siliconbiosystems.com/en-us/Oncology/Multiple-Myeloma,MRD (response),Mult. Myeloma,Blood,No,Yes,CMMC,,,,,CMMC,,,,,,,,,,MRD (txt efficacy),Multiple Myeloma,LB
+Advantect,ClearNote Health (Bluestar Genomics),https://www.avantect.com/avantect-test/,Early Detection,Pancreatic,Blood,No,Yes,cfDNA,,,,,cfDNA,,,,,,,,,,Early Detection ,Pancreatic,LB
+IsoPSA,Cleveland Diagnostics,https://www.clevelanddx.com/isopsa-testing,Biopsy Guidance,Prostate,Blood,No,Yes,Protein,PSA protein,,,,PSA proteins (from cancer cells),,,,,,,,,,Biopsy guidance ,Prostate,LB
+InsureONE,ClinicalGenomics,https://insuretest.com/,Early Detection,Colorectal (CRC),Stool,Yes,Yes,Blood in Stool,,FIT,,,Blood in stool,,,,14 days,,,,,,"Early Detection (FIT, primary)",CRC,LB
+UROAMP,Convergent Genomics,https://convergentgenomics.com/products-uroamp/,MRD (recurrance),Bladder,Urine,No,Yes,,,,,,ctDNA (?),,,,,,,,,,MRD (recurrance),Bladder,LB
+TruBlood,Datar Cancer Genetics,https://trublood360.com/,Risk Assessment ,Multiple,Blood,No,Yes,CTC,,,,,CTC,,,,,,TruBlood only in UK,,,,,"Lung, Prostate, Pancreas, CNS, Ovarian",LB
+RadTox,DiaCarta,https://www.diacarta.com/products/radtox,MRD (response),Multiple,Blood,No,Yes,cfDNA,,Measures DNA damage from radiation therapy. Not technically MRD?,,,cfDNA,,,,5 days,,,,,,Monitor throughout txt,Multiple,LB
+ColoScape,DiaCarta,https://www.diacartaclinicallab.com/fit-tests-diacartas-coloscape/,Txt Guidance,Colorectal (CRC),Blood,No,Yes,,, FIT positive but don't want colonoscopy,,,cfDNA (?),,,,,,,,,,Action guidance (if FIT positive but don't want colonoscopy),CRC,LB
+OncUria,DiaCarta,https://www.diacartaclinicallab.com/oncuria/,Risk Assessment ,Bladder,Urine,No,Yes,,,,,,,,,,,,,,,,Risk assess (very limited usage),Bladder,LB
+Dxcover Liquid Biopsy,Dxcover,https://www.dxcover.com/technology,Early Detection,Brain,Blood,Yes,Yes,,,,,,,,,In development. Requires platform,,,,,,,,,
+Prostate Cancer Test,Diagnolita,https://www.diagnolita.lt/en/tests/prostate-cancer-biomarker-test/,Biopsy Guidance,Prostate,Urine,No,No,mRNA,,,,,,,,,,,Lithuania,,,,,Prostate,LB
+CancerRadar,EarlyDx,https://earlydx.com/product/cancer-radar/,Early Detection,Multiple,Blood,No,Yes,ctDNA,,DNA methylation based count,,,cfDNA,,,,,,,,,,Early Detection  ,Multiple  ,LB
+ColoPlex,New Day Diagnostics,https://newdaydiagnostics.com/coloplex/,Early Detection,Colorectal (CRC),Blood,No,Yes,,,,,,,,,Non-US use,,,,,,,,CRC,LB
+ColoPlex Plus,New Day Diagnostics,https://newdaydiagnostics.com/wp-content/uploads/2024/02/ColoPlex-Plus-Sell-Sheet.pdf,Early Detection,Colorectal (CRC),Blood,No,Yes,cfDNA,mSEPTIN9 protein,,,,cfDNA (SEPT9),,,In Development,,,,,,,Early Detection,CRC,LB
+ColoHealth,New Day Diagnostics,https://newdaydiagnostics.com/wp-content/uploads/2023/11/ColoHealthSalesSheet.pdf,Early Detection,Colorectal (CRC),Blood,No,Yes,,,,,,,,,In Development,,,,,,,,CRC,LB
+InSure ONE,Enterix,https://insuretest.com/,Early Detection,Colorectal (CRC),Toilet Water,Yes,Yes,Blood in Stool,,FIT,,,Blood in Stool,,,,14 days,,,,,,Early Detection (FIT using toilet bowl water),CRC,LB
+Cologuard,Exact Sciences,https://www.cologuard.com/,Early Detection,Colorectal (CRC),Stool,Yes,Yes,Blood in Stool,,FIT,,,"Blood in stool, genetic markers",,,,14 days,,,,,,Early Detection (FIT + genetics),CRC,LB
+oncoguard liver,Exact Sciences,https://www.exactsciences.com/Our-Tests/Oncoguard-Liver,Early Detection,Liver ,Blood,No,Yes,,,,,,MDMs ,,,,,,,,,,,HCC,LB
+ExoDx Prostate,ExomeDx,https://www.exosomedx.com/patients/exodx-prostate-test,Biopsy Guidance,Prostate,Urine,No,Yes,,,,,,,,,,,,,,,,Risk Assessment (biopsy),Prostate,LB
+FoundationOne Liquid CDx,Foundation Medicine Inc,https://www.foundationmedicine.com/test/foundationone-liquid-cdx,Txt Guidance,Solid Tumors,Blood,Yes,Yes,,,Gene-Based,,,,,,,10 days,,,,,,Txt Guidance (Gene Based),Solid Tumor,LB
+EarlyTect Colon,Genomictree,https://genomictree.com/ko/products/earlytect-colon-cancer/,Early Detection,Colorectal (CRC),Stool,No,Yes,,,,,,,,,FDA trial coming soon,,,South Korea,,,,Early Detection,CRC,LB
+EarlyTect Lung,Genomictree,https://genomictree.com/ko/products/earlytect-lung-cancer/,Early Detection,Lung,Blood,No,Yes,,,,,,methylation of PCDHGA12,,,,,,South Korea,,,,Early Detection,Lung,LB
+EarlyTectBladder,Genomictree,https://genomictree.com/ko/products/earlytect-bladder-cancer/,Early Detection,Bladder,Urine,No,Yes,,,,,,,,,,,,,,,,Early Detection + MRD,Bladder,LB
+Glycanostics Test,Glycanostics,https://glycanostics.com/our-products/,Biopsy Guidance,Prostate,Blood,No,No,Protein,Glycan change (on proteins),Glycan change (proprietary),,,,,,,,,Slovakia,,,,Risk Assessment (biopsy),Prostate,LB
+Guardant360 CDx,Guardant Health,https://www.guardantcomplete.com/guardant-portfolio/cdx?utm_source=google&utm_medium=search&utm_campaign=Guardant360_HCP_GGL_BRND_Brand_AWA_SEA_EXTM_US_EN%20KW%20-%20SP%20BR_ALL&utm_term=guardant%20health&utm_content=search&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdsbGLJiQDJImSnXmmcqJeZnrhFNKrhj_vAMqb887fbGNuF_WHfuxwaAnOiEALw_wcB&gclsrc=aw.ds,Txt Guidance,Multiple,Blood,Yes,Yes,,,Gene-based for NSCLC + breast,,,,,,,7,,,,,,Action Guidance,"Lung, Breast",LB
+GuardantReveal,Guardant Health,https://www.guardantcomplete.com/guardant-portfolio/reveal?utm_source=google&utm_medium=search&utm_campaign=Guardant360_HCP_GGL_BRND_Brand_AWA_SEA_EXTM_US_EN%20KW%20-%20SP%20BR_ALL&utm_term=guardant%20health&utm_content=search&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdsbGLJiQDJImSnXmmcqJeZnrhFNKrhj_vAMqb887fbGNuF_WHfuxwaAnOiEALw_wcB&gclsrc=aw.ds,MRD (recurrance),Multiple,Blood,No,Yes,,,,,,,,,,,,,,,,,"CRC, Lung, Breast",LB
+Guardant360 Response,Guardant Health,https://www.guardantcomplete.com/guardant-portfolio/response?utm_source=google&utm_medium=search&utm_campaign=Guardant360_HCP_GGL_BRND_Brand_AWA_SEA_EXTM_US_EN%20KW%20-%20SP%20BR_ALL&utm_term=guardant%20health&utm_content=search&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdsbGLJiQDJImSnXmmcqJeZnrhFNKrhj_vAMqb887fbGNuF_WHfuxwaAnOiEALw_wcB&gclsrc=aw.ds,MRD (response),Multiple,Blood,No,Yes,ctDNA,,,,,ctDNA   ,,,,14,,,,,,MRD (therapy response),,LB
+Guardant360,Guardant Health,https://www.guardantcomplete.com/guardant-portfolio/360?utm_source=google&utm_medium=search&utm_campaign=Guardant360_HCP_GGL_BRND_Brand_AWA_SEA_EXTM_US_EN%20KW%20-%20SP%20BR_ALL&utm_term=guardant%20health&utm_content=search&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdsbGLJiQDJImSnXmmcqJeZnrhFNKrhj_vAMqb887fbGNuF_WHfuxwaAnOiEALw_wcB&gclsrc=aw.ds,Txt Guidance,Solid Tumors,Blood,No,Yes,,,Genetic Panel (broad),,,,,,,10,,,,,,,,LB
+Galleri test,GRAIL,https://www.galleri.com/,Early Detection,Multiple,Blood,No,Yes,cfDNA,,Early detection for multiple cancer types,,,cfDNA,,,,,,,,,,Early Detection,Multiple,LB
+HelioLiver,Helio Genomics,https://helioliver.com/,Early Detection,Liver ,Blood,No,Yes,cfDNA,,,,,"cfDNA, proteins",,,,,,,,,,,HCC,LB
+PancraGEN,Interpace Biosciences (formerly known as Interpace Diagnostics),https://pancragen.com/how-it-works/,Risk Assessment ,Pancreatic,Cyst Fluid,No,Yes,,,"Begnin, Low risk, Moderate risk, high risk report",,,,,,,,,,,,,Risk Assess (primary),Pancreatic,LB
+LucenceINSIGHT,Lucence,https://insight.lucence.com/,Early Detection,Multiple,Blood,No,Yes,ctDNA,,,,,ctDNA,,,,18 days,,,,,,Early Detection,Multiple,LB
+LiquidHALLMARK,Lucence,https://www.lucence.com/liquid-biopsy/,Txt Guidance,Multiple,Blood,No,Yes,ctDNA,,,,,ctDNA,,,,,,,,,,Genomic Profiling,Multiple,LB
+LungLB Test,LungLife AI,https://lunglifeai.com/lunglb/,Risk Assessment ,Lung,Blood,No,Yes,CTC,,,,,CTC,,,,,,,,,,Risk Assessment (indeterminate pulm nodule),Lung,LB
+Mitomic Prostate Test,MDNA Life Sciences,https://mdnalifesciences.com/mitomic-tests/,Early Detection,Prostate,Blood,No,Yes,MDNA,,,,,MDNA,,,,,,,,,,,Prostate,LB
+Mitomic Endometriosis Test,MDNA Life Sciences,https://mdnalifesciences.com/mitomic-tests/,Early Detection,Endometrial,Blood,No,Yes,MDNA,,,,,MDNA,,,,,,,,,,,Endometrial,LB
+Select mdx,MDxHealth,https://mdxhealth.com/select-mdx-for-physicians/,Biopsy Guidance,Prostate,Urine,No,Yes,mRNA,HOXC6 and DLX1,,,,,,,,,,,,,,,Prostate,LB
+Mercy Halo Test,Mercy BioAnalytics,https://mercybio.com/the-mercy-halo-test/,Early Detection,Multiple,Blood,No,Yes,EV,,Claim EV > ctDNA for early detection,,,EV,,,,,,,,,,,"Lung, Ovarian",LB
+OncobiotaLUNG,Micronoma,https://micronoma.com/lung-cancer/,Biopsy Guidance,Lung,Blood,No,Yes,ctmbDNA,,Tumor Microbial DNA?,,,,,,,,,,,,,Risk Assessment (indeterminate pulm nodule),Lung,LB
+MICheck Prostate,Minomic,https://minomic.com/micheck-prostate/,Biopsy Guidance,Prostate,Blood,No,Yes,,,,,,,,,,,,Australia,,,,,Prostate,LB
+miR Sentinel Prostate,miR Scientific,https://www.mirscientific.com/mir-advantage,Early Detection,Prostate,Blood,No,Yes,sncRNA,,Claim sncRNA > PSA for prostate,,,,,,,,,,,,,,Prostate,LB
+GASTROClear,MiRXES,https://gastroclear.mirxes.com/,Early Detection,Gastric,Blood,No,No,mRNA,,,,,mRNA,,,,,,Singapore,,,,,Gastric,LB
+ClarityDx Prostate,Nanostics,https://www.nanosticsdx.com/clarity-dx-prostate/,Biopsy Guidance,Prostate,Blood,No,No,Protein,PSA protein,,,,,,,,,,,,,,,Prostate,LB
+Signatera,Natera,https://www.natera.com/oncology/signatera-advanced-cancer-detection/patients/#pg-menu-tabs,MRD (recurrance),Solid Tumors,Blood,,Yes,ctDNA,,Requires tissue!,,,ctDNA,,,,,,,,,,MRD (recurrance),Solid Tumors,LB
+NavDx,Naveris,https://naveris.com/what-is-navdx/,Early Detection,Head/Neck,Blood,No,Yes,cfDNA,,Tumor Tissue Modified HPV DNA test,,,TTMV DNA,,,,,,,,,,,"HPV-driven Head, Neck",LB
+InVisionFirst-Lung,NeoGenomics,https://neogenomics.com/invisionfirstr-lung,Txt Guidance,Lung (Non-Small Cell),Blood,No,Yes,ctDNA,,Gene-Based Panel,,,,,,,7 days,,,,,,,NSCLC,LB
+Galeas Bladder,Nonacus,https://galeas.net/galeas-bladder/,Risk Assessment ,Bladder,Urine,No,No,,,,,,,,,,,,,,,,Risk Assessment,Bladder,LB
+Colox,Novigenix,https://novigenix.com/colox-solution/,Early Detection,Colorectal (CRC),Blood,,,,,,,,,,,,14 days,,,,,,Early Detection,CRC,LB
+Bladder EpiCheck,Nucleix,https://nucleix.com/us/bladder-epicheck/,MRD (recurrance),Bladder,Urine,Yes,Yes,ctDNA,,,,,ctDNA,,,,,,,,,,,non-muscle bladder cancer,LB
+Lung EpiCheck,Nucleix,https://nucleix.com/us/lung-epicheck-3/,Early Detection,Lung,Blood,No,Yes,ctDNA,,,,,ctDNA,,,,,,,,,,,Lung,LB
+OrisDX,OrisDX,https://www.orisdx.com/,Early Detection,Mouth/Throat,Saliva,No,No,cfDNA,,,,,,,,In development,,,,,,,,,
+OncoSELECT,OncoDNA,https://oncodna.com/for-laboratories/liquid-biopsy-oncoselect/,Txt Guidance,Multiple,Blood,No,Yes,ctDNA,,,,,,,,,5 days,,Germany,,,,Profiling,,LB
+4Kscore Test,OPKO,https://4kscore.com/,Biopsy Guidance,Prostate,Blood,Yes,Yes,Protein,PSA protein,"Intact PSA, hK2 proprietary to OKPO",,,,,,,,,,,,,Risk Assessment,Prostate,LB
+Cxbladder,Pacific Edge Diagnostics USA,https://www.pacificedgedx.com/products/cxbladder/,Early Detection,Bladder,Urine,No,Yes,Protein,,multiple applications in one testing suite,,,,,,,3 days,,,,,,,Bladder,LB
+NeXT Personal Dx,Personalis,https://www.personalis.com/for-clinicians/next-personal-dx/,MRD (recurrance),Multiple,Blood,No,Yes,ctDNA,,May also require tissue?,,,,,,In Development,,,,,,,MRD,"Lung, Breast",LB
+PredicineBEACON,Predicine,https://www.predicine.com/solutions-overview/predicinebeacon/,MRD (recurrance),Multiple,Blood,No,Yes,,,Also can use urine,,,,,,,6 days,,,,,,,,LB
+AdnaTest BreastCancer,QIAGEN,https://www.qiagen.com/us/products/discovery-and-translational-research/exosomes-ctcs/circulating-tumor-cells/adnatest-breast-cancer?catno=395012,Txt Guidance,Breast,Blood,No,Yes,CTC,,Profiling ,,,CTC,,,,,,,,"1,152",,,Breast,LB
+AdnaTest LungCancer,QIAGEN,https://www.qiagen.com/us/products/discovery-and-translational-research/exosomes-ctcs/circulating-tumor-cells/adnatest-lungcancer,Txt Guidance,Lung,Blood,No,Yes,CTC,,Profiling ,,,CTC,,,,,,,,"1,326",,,Lung ,LB
+AdnaTest ColonCancer,QIAGEN,https://www.qiagen.com/us/products/discovery-and-translational-research/exosomes-ctcs/circulating-tumor-cells/adnatest-colon-cancer,Txt Guidance,Colon,Blood,No,Yes,CTC,,Profiling ,,,CTC,,,,,,,,"1,152",,,Colon,LB
+AdnaTest ProstateCancer,QIAGEN,https://www.qiagen.com/us/products/discovery-and-translational-research/exosomes-ctcs/circulating-tumor-cells/adnatest-prostate-cancer,Txt Guidance,Prostate,Blood,No,Yes,CTC,,Profiling ,,,CTC,,,,,,,,"1,152",,,Prostate ,LB
+Resolution ctDx FIRST,Resolution Bioscience ,https://www.resolutionbio.com/assays/Resolution-ctDx-FIRST.html,Txt Guidance,Lung (Non-Small Cell),Blood,No,Yes,cfDNA,,,,,,,,,,,,,,,,NSCLC,LB
+Resolution ctDX Lung,Resolution Bioscience ,https://www.resolutionbio.com/assays/Resolution-ctDx-Lung.html,Txt Guidance,Lung (Non-Small Cell),Blood,No,Yes,cfDNA,,"Gene-Based, more specific than FIRST",,,,,,,,,,,,,Txt Guidance (Gene Based),Lung,LB
+Aristotle,StageZero Life Sciences,https://www.stagezerolifesciences.com/aristotle-test.html,Early Detection,Multiple,Blood,No,Yes,mRNA,,,,,mRNA,,,,,,,,,,,Multiple,LB
+ColonSentry,StageZero Life Sciences,https://www.stagezerolifesciences.com/colonsentry.html,Early Detection,Colorectal (CRC),Blood,No,Yes,mRNA,,,,,mRNA,,,,,,,,,,,CRC,LB
+Signal-C,Universal Diagnostics,https://www.universaldx.com/multicancer-platform,Early Detection,Colorectal (CRC),Blood,No,Yes,cfDNA,,,,,cfDNA,,,,,,,,,,Early Detection,CRC,LB
+Nu-Q Cancer,Volition,https://volition.com/nu-q,MRD (response),Multiple,Blood,No,Yes,Circ. Nucleosomes,,,,,Circ. Nucleosomes,,,In Development,,,,,,,,EU,LB
+AlphaLiquid Screening,IMBdx,https://www.imbdx.com/eng/about/screening.php,Txt Guidance,Multiple,Blood,No,Yes,ctDNA,,Gene-based profiling,,,,,,Non-USA,,,,,,,Early Detection,,LB
+CancerDetect,IMBdx,https://www.imbdx.com/eng/about/detect.php,MRD (recurrance),Colorectal (CRC),Blood,No,Yes,ctDNA,,IMBdx partnered with AstraZeneca,,,,,,,,,,,,,,,
+CancerFind,IMBdx,https://www.imbdx.com/eng/about/screening.php,Early Detection,Multiple,Blood,No,Yes,cfDNA,,,,,,,,,,,,,,,,,
