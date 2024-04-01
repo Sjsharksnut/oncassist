@@ -6,6 +6,7 @@ import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 export default function Page() {
+
   const [rowData, setRowData] = useState([]);
   const [columnDefs, setColumnDefs] = useState([]);
 
@@ -26,7 +27,22 @@ export default function Page() {
       return accumulator;
     }, []);
 
-    setColumnDefs(newColumnDefs.map((key) => ({ field: key })));
+      // To dynamically determine columns, we'll iterate through each row...
+      const newColumnDefs = newData.reduce((accumulator, row) => {
+        // Then iterate through each key
+        Object.keys(row).forEach((key) => {
+          // Check if we already have a column for this key
+          if (!accumulator.includes(key)) {
+            // if not, then add the key to our list of colums
+            accumulator.push(key);
+          }
+        });
+        // return the flat list of columns. i.e. [id, company, target]
+        return accumulator;
+      }, []);
+      // then convert the flat list to the nested struct ag-grid expects
+      setColumnDefs(newColumnDefs.map(key => ({ 'field': key })));
+    });
   };
 
   useEffect(() => {
@@ -41,14 +57,16 @@ export default function Page() {
         return orderedColumns.indexOf(a.field) - orderedColumns.indexOf(b.field);
       });
       return orderedDefs;
-    });
-  }, [columnDefs]);
+    } );
+  }, [columnDefs]); // Trigger when columnDefs change
+
 
   return (
-    <div className={"ag-theme-quartz-dark"} style={{ width: "100vw", height: "100vh" }}>
+    <div
+      className={"ag-theme-quartz-dark"}
+      style={{ width: "100vw", height: "100vh" }}
+    >
       <AgGridReact rowData={rowData} columnDefs={columnDefs}></AgGridReact>
     </div>
   );
 }
-
-
