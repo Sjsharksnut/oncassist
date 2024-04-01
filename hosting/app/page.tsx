@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { AgGridReact } from "ag-grid-react";
-
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-quartz.css";
-
 import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
 
@@ -13,13 +11,10 @@ export default function Page() {
 
   const getData = async () => {
     const querySnapshot = await getDocs(collection(db, "liquidbiopsy2"));
-    const orderedQuerySnapshot = querySnapshot.docs.sort((a, b) => a.data().timestamp - b.data().timestamp);
-  
-    const newData = orderedQuerySnapshot.map((doc) => ({
+    const newData = querySnapshot.docs.map((doc) => ({
       id: doc.id,
       ...(doc.data() || {}),
     }));
-
     setRowData(newData);
 
     const newColumnDefs = newData.reduce((accumulator, row) => {
@@ -40,7 +35,7 @@ export default function Page() {
 
   useEffect(() => {
     const orderedColumns = ['TEST NAME', 'COMPANY', 'LINK', 'Action (Coded)', 'Cancer Type (Coded)', 'FLUID TYPE', 'FDA Appr?', 'CLIA/CAP cert?', 'Target (Coded)'];
-    setColumnDefs(columnDefs => {
+    setColumnDefs((columnDefs) => {
       const orderedDefs = columnDefs.slice();
       orderedDefs.sort((a, b) => {
         return orderedColumns.indexOf(a.field) - orderedColumns.indexOf(b.field);
