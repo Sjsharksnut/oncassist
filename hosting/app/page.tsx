@@ -22,7 +22,7 @@ export default function Page() {
   // Function to fetch data from Firestore
   const getData = async () => {
     // Get all docs from "test2" collection
-    await getDocs(collection(db, "test2")).then((querySnapshot) => {
+    await getDocs(collection(db, "test30")).then((querySnapshot) => {
       // map the docs into a list of objects
       const newData = querySnapshot.docs.map((doc) => ({
         id: doc.id,
@@ -32,7 +32,7 @@ export default function Page() {
       setRowData(newData);
 
       // Define the desired column order
-      const desiredColumnOrder = ["\ufeffTest", "Company", "Link", "Action (Coded)", "Cancer Type (Coded)", "Fluid Type", "FDA approval", "CLIA or CAP certification", "Target (Coded)", "Genetic or Protein Targets", "Notes"];
+      const desiredColumnOrder = ["\ufeffTest", "Company", "Link", "Action (Coded)", "Cancer Type (Coded)", "Fluid Type", "FDA approval", "CLIA or CAP certification", "Target (Coded)", "Genetic or Protein targets", "Notes"];
 
       // Generate column definitions based on the desired order
       const newColumnDefs = desiredColumnOrder.map(key => {
@@ -52,7 +52,7 @@ export default function Page() {
             headerName: key,
             sortable: true,
             filter: true,
-            autoHeight: key === "Genetic or Protein Targets" || key === "Notes"
+            autoHeight: key === "Genetic or Protein targets" || key === "Notes"
           };
         }
       });
