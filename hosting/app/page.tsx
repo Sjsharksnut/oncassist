@@ -5,12 +5,14 @@ import { AgGridReact, AgGridReactProps } from "ag-grid-react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
 import Header from "./Header";
+import LinkRenderer from "./LinkRenderer";
+import { GridOptions } from "ag-grid-community";
 
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-quartz.css";
 
 interface CustomAgGridReactProps extends AgGridReactProps {
-  frameworkComponents?: { [key: string]: React.ComponentType<any> };
+  frameworkComponents: { [key: string]: React.ComponentType<any> };
 }
 
 export default function Page() {
@@ -39,16 +41,18 @@ export default function Page() {
           return {
             field: key,
             headerName: key,
-            cellRenderer: "linkRenderer", // Use the custom cell renderer
+            cellRenderer: LinkRenderer,
             sortable: false,
             filter: false
           };
         } else {
+          // Add autoHeight property for the "Genetic or Protein Targets" and "Notes" columns
           return {
             field: key,
             headerName: key,
             sortable: true,
-            filter: true
+            filter: true,
+            autoHeight: key === "Genetic or Protein Targets" || key === "Notes"
           };
         }
       });
@@ -63,28 +67,8 @@ export default function Page() {
     getData();
   }, []);
 
-  // Custom cell renderer component for rendering clickable links
-  const LinkRenderer: React.FC<{ value: string }> = (props) => {
-    const handleClick = () => {
-      window.open(props.value, "_blank"); // Open the URL in a new tab
-    };
-
-    return (
-      <div
-        style={{
-          cursor: "pointer",
-          color: "blue",
-          textDecoration: "underline"
-        }}
-        onClick={handleClick}
-      >
-        {props.value}
-      </div>
-    );
-  };
-
-  // Define grid options
-  const gridOptions = {
+   // Define grid options
+   const gridOptions = {
     frameworkComponents: {
       linkRenderer: LinkRenderer
     }

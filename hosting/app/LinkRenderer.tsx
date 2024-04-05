@@ -1,7 +1,8 @@
-// LinkRenderer.js
+// LinkRenderer.tsx
+
 import React from "react";
 
-export const LinkRenderer = (props) => {
+const LinkRenderer: React.FC<{ value: string }> = (props) => {
   const handleClick = () => {
     window.open(props.value, "_blank"); // Open the URL in a new tab
   };
@@ -19,3 +20,5 @@ export const LinkRenderer = (props) => {
     </div>
   );
 };
+
+export default LinkRenderer;
